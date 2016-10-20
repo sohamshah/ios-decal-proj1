@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
-    var items: [String] = ["Jello", "parks"]
+    var items: [String] = []
     
     @IBOutlet weak var listTableView: UITableView!
     @IBAction func addItem(_ sender: AnyObject) {
@@ -36,10 +36,16 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     func alert() {
         let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+        alert.addTextField(configurationHandler: {
+            (textfield) in
+            textfield.placeholder = "Enter your item name"
+        })
+        
         let add = UIAlertAction(title: "Add", style: .default) {
             (action) in
-            
-            self.items.append("")
+            let textfield = alert.textFields![0] as! UITextField
+            self.items.append(textfield.text!)
+            self.listTableView.reloadData()
         }
         
         let cancel = UIAlertAction(title: "Cancel", style: .cancel) {
@@ -50,6 +56,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         alert.addAction(add)
         alert.addAction(cancel)
         present(alert, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        items.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .automatic)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
