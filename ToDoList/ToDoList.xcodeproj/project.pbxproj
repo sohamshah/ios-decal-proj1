@@ -15,6 +15,7 @@
 		ED1B98F51DB877690044D4DB /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B98F41DB877690044D4DB /* ToDoListTests.swift */; };
 		ED1B99001DB877690044D4DB /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B98FF1DB877690044D4DB /* ToDoListUITests.swift */; };
 		ED1B990E1DB8995A0044D4DB /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1B990D1DB8995A0044D4DB /* ItemTableViewCell.swift */; };
+		ED4D03DB1DB8A83E004CAF6F /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D03DA1DB8A83E004CAF6F /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ED1B98FF1DB877690044D4DB /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		ED1B99011DB877690044D4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED1B990D1DB8995A0044D4DB /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		ED4D03DA1DB8A83E004CAF6F /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				ED1B98DF1DB877690044D4DB /* AppDelegate.swift */,
 				ED1B98E11DB877690044D4DB /* ViewController.swift */,
 				ED1B990D1DB8995A0044D4DB /* ItemTableViewCell.swift */,
+				ED4D03DA1DB8A83E004CAF6F /* StatusViewController.swift */,
 				ED1B98E31DB877690044D4DB /* Main.storyboard */,
 				ED1B98E61DB877690044D4DB /* Assets.xcassets */,
 				ED1B98E81DB877690044D4DB /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4D03DB1DB8A83E004CAF6F /* StatusViewController.swift in Sources */,
 				ED1B98E21DB877690044D4DB /* ViewController.swift in Sources */,
 				ED1B990E1DB8995A0044D4DB /* ItemTableViewCell.swift in Sources */,
 				ED1B98E01DB877690044D4DB /* AppDelegate.swift in Sources */,
@@ -507,6 +511,7 @@
 				ED1B99061DB877690044D4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1B99071DB877690044D4DB /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				ED1B99091DB877690044D4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED1B990A1DB877690044D4DB /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				ED1B990C1DB877690044D4DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
